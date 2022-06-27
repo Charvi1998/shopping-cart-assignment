@@ -1,0 +1,29 @@
+.cart-icon-container {
+  width: 9.6rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 0.4rem;
+}
+
+.shopping-logo {
+  width: 3.2rem;
+  height: 3.2rem;
+  fill: #a92949;
+}
+
+.item-count {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 544px) {
+  .shopping-logo {
+    width: 26px;
+    height: 26px;
+  }
+  .item-count {
+    font-size: 10px;
+  }
+}

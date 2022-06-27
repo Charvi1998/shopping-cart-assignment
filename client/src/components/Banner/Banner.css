@@ -1,0 +1,102 @@
+.carousel-container {
+  margin: 4.8rem 12rem;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel {
+  position: relative;
+  box-shadow: 0 8px 4px 0px rgb(121, 130, 138, 0.1),
+    0 0px 20px 0 rgb(255, 255, 255);
+}
+
+.btn--left {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  z-index: 1;
+}
+
+.btn--right {
+  position: absolute;
+  right: 2.5%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1;
+}
+
+.btn-banner {
+  background-color: #00000058;
+  border: none;
+  padding: 0.8rem;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/***************MEDIA QUERIES****************/
+
+/*******************************/
+/* BELOW 944px(Tablets) */
+/*******************************/
+
+@media (max-width: 944px) {
+  .carousel-container {
+    margin: 12px 12px;
+  }
+  .btn--right {
+    right: 2.5%;
+  }
+}
+
+/*******************************/
+/* BELOW 810px(Smaller Tablets) */
+/*******************************/
+
+@media (max-width: 810px) {
+  @media (max-width: 810px) {
+    .carousel-container {
+      margin: 12px 12px;
+    }
+    .btn--right {
+      right: 2.5%;
+    }
+  }
+}
+
+/*******************************/
+/* BELOW 670px(Mobile Phones) */
+/*******************************/
+
+@media (max-width: 670px) {
+  .carousel-container {
+    margin: 12px 12px;
+  }
+  .btn-banner {
+    padding: 4px;
+    font-size: 8px;
+  }
+  .btn--right {
+    right: 2%;
+  }
+}
+
+/*******************************/
+/* BELOW 420px(Mobile Phones) */
+/*******************************/
+
+@media (max-width: 420px) {
+  .carousel-container {
+    margin: 12px 12px;
+  }
+  .btn-banner {
+    padding: 4px;
+    font-size: 8px;
+  }
+  .btn--right {
+    right: 4%;
+  }
+}

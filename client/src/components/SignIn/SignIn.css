@@ -1,0 +1,103 @@
+.sign-in-container {
+  margin: 2.4rem 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4.8rem;
+}
+
+.sign-in-header {
+  margin-top: 2.4rem;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.sign-in-head {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.sign-in-desc {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.sign-in-form {
+  width: 40rem;
+  color: grey;
+}
+
+.sign-in-btn {
+  background-color: #a92949;
+  color: #fff;
+  width: 100%;
+}
+
+/***************MEDIA QUERIES****************/
+
+/*******************************/
+/* BELOW 900px(Tablets) */
+/*******************************/
+@media (max-width: 900px) {
+  .sign-in-container {
+    margin: 24px 56px;
+    gap: 56px;
+  }
+  .sign-in-desc {
+    font-size: 16px;
+  }
+}
+
+/*******************************/
+/* BELOW 544px(Mobile Phones) */
+/*******************************/
+
+@media (max-width: 544px) {
+  .sign-in-container {
+    flex-direction: column;
+    margin: 12px 72px;
+    gap: 24px;
+  }
+  .sign-in-desc {
+    line-height: 1.2;
+    font-size: 14px;
+  }
+  .sign-in-header {
+    padding: 12px;
+  }
+  .sign-in-form {
+    width: 400px;
+  }
+  .sign-in-btn {
+    width: 80%;
+    margin-left: 35px;
+  }
+}
+
+/*******************************/
+/* BELOW 420px(Mobile Phones) */
+/*******************************/
+
+@media (max-width: 420px) {
+  .sign-in-container {
+    flex-direction: column;
+    margin: 12px 48px;
+    gap: 24px;
+  }
+  .sign-in-desc {
+    line-height: 1.2;
+    font-size: 14px;
+  }
+  .sign-in-header {
+    padding: 12px;
+  }
+  .sign-in-form {
+    width: 350px;
+  }
+  .sign-in-btn {
+    width: 80%;
+    margin-left: 35px;
+  }
+}

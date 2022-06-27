@@ -1,0 +1,74 @@
+.categories-side {
+  background-color: #f1f1f1;
+  padding: 0 1.2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.categories-side ul {
+  list-style: none;
+  font-size: 1.2rem;
+  color: #514e4e;
+}
+
+.btn--categories {
+  padding: 0.6rem 1.2rem;
+  margin: 0.8rem 0rem;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+.category-list-media {
+  display: none;
+}
+
+/*******************************/
+/* BELOW 420px(Mobile Phones) */
+/*******************************/
+@media (max-width: 420px) {
+  .categories-side {
+    background-color: #fff;
+  }
+  .category-list {
+    display: none;
+  }
+  .category-list-media {
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    border: none;
+    background-color: #a92949;
+    color: #fff;
+    margin-left: 0px;
+  }
+  .category-dropdown-menu {
+    background-color: #fff;
+    color: #a92949;
+  }
+}
+
+/*******************************/
+/* BELOW 380px(Mobile Phones) */
+/*******************************/
+@media (max-width: 380px) {
+  .categories-side {
+    background-color: #fff;
+  }
+  .category-list {
+    display: none;
+  }
+  .category-list-media {
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    border: none;
+    background-color: #a92949;
+    color: #fff;
+    margin-left: 0px;
+  }
+  .category-dropdown-menu {
+    background-color: #fff;
+    color: #a92949;
+  }
+}

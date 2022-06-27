@@ -1,0 +1,161 @@
+.main-cart-section {
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 62rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  display: inline-block;
+}
+
+.header-cart {
+  padding-left: 2.4rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.header-cart span {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.cart-items-container {
+  margin-top: 1.2rem;
+  background-color: #f1f1f1;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  gap: 1.2rem;
+  background-color: #fff;
+  padding-left: 2.4rem;
+  margin: 1.6rem 0rem;
+}
+
+.cart-img {
+  padding: 0.6rem;
+  height: 10rem;
+  width: 10rem;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.4rem;
+  justify-content: center;
+}
+
+.item-detail {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+ion-icon {
+  color: #a92949;
+  width: 24px;
+  height: 24px;
+}
+
+.offer-container {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  margin: 1.2rem;
+  padding: 0.5rem;
+}
+
+.offer-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cart-footer {
+  height: 7rem;
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-footer-text {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cart-footer-btn {
+  padding: 1rem;
+  color: #fff;
+  background-color: #a92949;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.no-items-in-cart {
+  text-align: center;
+  height: 55rem;
+  width: 100%;
+  display: inline;
+  padding: 20rem 0rem;
+}
+
+.no-items-in-cart p {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.no-items-in-cart span {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.start-shopping-btn {
+  text-align: center;
+  width: 95%;
+  margin: 2%;
+  padding: 1rem;
+  color: #fff;
+  background-color: #a92949;
+  border: none;
+  border-radius: 4px;
+}
+
+/***************MEDIA QUERIES****************/
+
+/*******************************/
+/* BELOW 900px(Tablets) */
+/*******************************/
+@media (max-width: 900px) {
+  .main-cart-section {
+    height: 52rem;
+  }
+  .no-items-in-cart {
+    height: 50rem;
+  }
+}
+
+/********************************/
+/* BELOW 420px(Mobile Phones) */
+/*******************************/
+
+@media (max-width: 420px) {
+  .main-cart-section {
+    height: 80rem;
+  }
+  .no-items-in-cart {
+    height: 100%;
+  }
+}

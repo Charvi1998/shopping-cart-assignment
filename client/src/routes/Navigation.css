@@ -1,0 +1,252 @@
+.navigation-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 3.2rem;
+  margin-bottom: 1.2rem;
+  height: 10rem;
+  width: 100%;
+  box-shadow: 0 8px 4px 0px rgb(121, 130, 138, 0.1),
+    0 0px 20px 0 rgb(255, 255, 255);
+}
+
+.logo {
+  width: 15rem;
+  height: 10rem;
+}
+
+.navigation {
+  padding-left: 20rem;
+}
+
+.nav-links-container {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-right: 9.6rem;
+}
+
+.nav-links-user {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.nav-link {
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  color: #514e4e;
+  font-weight: bold;
+}
+
+.cart-container {
+  background-color: #f1f1f1;
+  width: 11rem;
+  height: 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-end;
+  padding: 1rem;
+  position: absolute;
+  top: 70%;
+  left: 84%;
+  transform: translate(-95%, -50%);
+}
+
+/***************MEDIA QUERIES****************/
+
+/*******************************/
+/* BELOW 900px(Tablets) */
+/*******************************/
+
+@media (max-width: 900px) {
+  .navigation-container {
+    grid-template-columns: 1fr 3fr 2fr;
+    width: 900px;
+    height: 78px;
+    gap: 12px;
+  }
+  .logo {
+    width: 120px;
+    height: 76px;
+  }
+  .navigation {
+    padding: 4px 8px;
+  }
+  .nav-links-user {
+    width: 35%;
+    height: 35%;
+    gap: 12px;
+    margin-left: 330px;
+  }
+  .nav-links-container.nav-links-user {
+    margin-bottom: 36px;
+  }
+  .cart-container {
+    width: 120px;
+    height: 42px;
+    position: absolute;
+    top: 65%;
+    left: 98%;
+    transform: translate(-94%, -50%);
+  }
+}
+
+/*******************************/
+/* BELOW 670px(Smaller Tablets) */
+/*******************************/
+
+@media (max-width: 670px) {
+  .navigation-container {
+    grid-template-columns: 1fr 2fr 2fr;
+    width: 670px;
+    height: 70px;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    width: 86px;
+    height: 72px;
+  }
+
+  .navigation {
+    padding: 4px 8px;
+  }
+
+  .nav-link-main {
+    display: none;
+  }
+
+  .nav-links-container.nav-links-user {
+    gap: 12px;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .nav-links-user {
+    width: 50%;
+    height: 90%;
+    gap: 24px;
+    margin-left: 10px;
+  }
+
+  .cart-container {
+    position: absolute;
+    width: 15%;
+    height: 95%;
+    top: 50%;
+    left: 98%;
+    transform: translate(-95%, -50%);
+  }
+}
+
+/*******************************/
+/* BELOW 420px(Mobile Phones) */
+/*******************************/
+
+@media (max-width: 420px) {
+  .navigation-container {
+    grid-template-columns: 1fr 2fr 2fr;
+    width: 420px;
+    height: 50px;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    width: 72px;
+    height: 40px;
+  }
+
+  .navigation {
+    padding: 4px 8px;
+  }
+
+  .nav-link-main {
+    display: none;
+  }
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .nav-links-container.nav-links-user {
+    gap: 12%;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .nav-links-user {
+    width: 50%;
+    height: 90%;
+    gap: 24px;
+    margin-left: 10px;
+  }
+
+  .cart-container {
+    position: absolute;
+    width: 15%;
+    height: 95%;
+    top: 50%;
+    left: 98%;
+    transform: translate(-95%, -50%);
+  }
+}
+
+/*******************************/
+/* BELOW 380px(Mobile Phones) */
+/*******************************/
+
+@media (max-width: 380px) {
+  .navigation-container {
+    grid-template-columns: 1fr 2fr 2fr;
+    width: 100%;
+    height: 50px;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    width: 72px;
+    height: 40px;
+  }
+
+  .navigation {
+    padding: 4px 8px;
+  }
+
+  .nav-link-main {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .nav-links-container.nav-links-user {
+    gap: 12%;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .nav-links-user {
+    width: 50%;
+    height: 90%;
+    gap: 24px;
+    margin-left: 5px;
+  }
+
+  .cart-container {
+    position: absolute;
+    width: 15%;
+    height: 95%;
+    top: 50%;
+    left: 98%;
+    transform: translate(-95%, -50%);
+  }
+}
