@@ -4,7 +4,6 @@ import { CartContext } from "../../contexts/Cart.context";
 import "../Products/Products.css";
 
 const ProductCard = ({ product }) => {
-  // console.log({ product });
   const { addItemToCart } = useContext(CartContext);
   const addProductToCart = () => addItemToCart(product);
 
@@ -20,20 +19,12 @@ const ProductCard = ({ product }) => {
       <div className="side-view side-view-content">
         <div className="product-footer">
           <p className="product-price">MRP Rs.{product.price}</p>
-          <button
-            className="btn btn-buy-now "
-            // onClick={(id) => addItemToCart(product.id)}
-            onClick={addProductToCart}
-          >
+          <button className="btn btn-buy-now " onClick={addProductToCart}>
             Buy Now
           </button>
         </div>
         <div className="product-footer-media">
-          <button
-            className="btn btn-buy-now "
-            // onClick={(id) => addItemToCart(product.id)}
-            onClick={addProductToCart}
-          >
+          <button className="btn btn-buy-now " onClick={addProductToCart}>
             Buy Now @ MRP Rs.{product.price}
           </button>
         </div>

@@ -40,38 +40,23 @@
 /***************MEDIA QUERIES****************/
 
 /*******************************/
-/* BELOW 944px(Tablets) */
+/* BELOW 1025px(Tablets) */
 /*******************************/
 
-@media (max-width: 944px) {
+@media (max-width: 1025px) {
   .carousel-container {
     margin: 12px 12px;
   }
   .btn--right {
-    right: 2.5%;
+    right: 3%;
   }
 }
 
 /*******************************/
-/* BELOW 810px(Smaller Tablets) */
+/* BELOW 769px(Mobile Phones) */
 /*******************************/
 
-@media (max-width: 810px) {
-  @media (max-width: 810px) {
-    .carousel-container {
-      margin: 12px 12px;
-    }
-    .btn--right {
-      right: 2.5%;
-    }
-  }
-}
-
-/*******************************/
-/* BELOW 670px(Mobile Phones) */
-/*******************************/
-
-@media (max-width: 670px) {
+@media (max-width: 769px) {
   .carousel-container {
     margin: 12px 12px;
   }
@@ -85,10 +70,10 @@
 }
 
 /*******************************/
-/* BELOW 420px(Mobile Phones) */
+/* BELOW 426px(Mobile Phones) */
 /*******************************/
 
-@media (max-width: 420px) {
+@media (max-width: 426px) {
   .carousel-container {
     margin: 12px 12px;
   }

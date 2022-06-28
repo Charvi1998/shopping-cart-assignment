@@ -24,9 +24,9 @@
 }
 
 /*******************************/
-/* BELOW 420px(Mobile Phones) */
+/* BELOW 426px(Mobile Phones) */
 /*******************************/
-@media (max-width: 420px) {
+@media (max-width: 426px) {
   .categories-side {
     background-color: #fff;
   }
@@ -49,9 +49,9 @@
 }
 
 /*******************************/
-/* BELOW 380px(Mobile Phones) */
+/* BELOW 376px(Mobile Phones) */
 /*******************************/
-@media (max-width: 380px) {
+@media (max-width: 376px) {
   .categories-side {
     background-color: #fff;
   }

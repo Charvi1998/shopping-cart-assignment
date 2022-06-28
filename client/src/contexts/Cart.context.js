@@ -33,8 +33,6 @@ const removeCartItem = (cartItems, cartItemToRemove) => {
 };
 
 export const CartContext = createContext({
-  isCartOpen: false,
-  setIsCartOpen: () => {},
   cartItems: [],
   addItemToCart: () => {},
   cartCount: 0,
@@ -42,7 +40,6 @@ export const CartContext = createContext({
 });
 
 export const CartProvider = ({ children }) => {
-  const [isCartOpen, setIsCartOpen] = useState(false);
   const [cartItems, setCartItems] = useState([]);
   const [cartCount, setCartCount] = useState(0);
   const [cartTotal, setCartTotal] = useState(0);
@@ -65,7 +62,6 @@ export const CartProvider = ({ children }) => {
 
   const addItemToCart = (productToAdd) => {
     setCartItems(addCartItem(cartItems, productToAdd));
-    // console.log(productToAdd);
   };
 
   const removeItemToCart = (productToRemove) => {
@@ -73,8 +69,6 @@ export const CartProvider = ({ children }) => {
   };
 
   const value = {
-    isCartOpen,
-    setIsCartOpen,
     addItemToCart,
     removeItemToCart,
     cartItems,

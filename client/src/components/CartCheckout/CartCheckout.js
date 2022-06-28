@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../contexts/Cart.context";
+import "./CartCheckout.css";
 
-const CartCheckout1 = ({ item }) => {
+const CartCheckout = ({ item }) => {
   const { name, imageURL, description, price, quantity } = item;
 
   const { addItemToCart, removeItemToCart } = useContext(CartContext);
@@ -24,10 +25,11 @@ const CartCheckout1 = ({ item }) => {
               <span>Rs.{price}</span>
             </div>
           </div>
+          <div className="item-total">Rs. {quantity * price}</div>
         </div>
       </div>
     </>
   );
 };
 
-export default CartCheckout1;
+export default CartCheckout;

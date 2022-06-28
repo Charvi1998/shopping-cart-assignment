@@ -15,14 +15,6 @@ const FormInput = ({ label, errorMessage, ...otherProps }) => {
           {label}
         </label>
       )}
-      {/* <p
-        className={`${
-          !otherProps.value.length ? "disabled" : "active"
-        } helper-text`}
-      >
-        {helperText}
-      </p> */}
-      {/* <span className="text-error">{errorMessage}</span> */}
     </div>
   );
 };

@@ -3,7 +3,6 @@
   flex-direction: row;
   background-color: #fff;
   gap: 8px;
-  /* margin: 0px 50px; */
 }
 
 .products-grid {
@@ -52,7 +51,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .product-footer p {
@@ -64,64 +63,16 @@
 }
 
 /***************MEDIA QUERIES****************/
-/*******************************/
-/* BELOW 900px(Tablets) */
-/*******************************/
-@media (max-width: 900px) {
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .products-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 8px;
-    column-gap: 24px;
-    max-width: 700px;
-  }
-  .product-card {
-    padding: 8px;
-    grid-template-columns: 1fr 1fr;
-  }
-  .product-heading {
-    grid-column: 1/-1;
-    margin-bottom: 10px;
-    margin-left: 8px;
-    text-align: left;
-  }
-  .product-img {
-    grid-row: 2/3;
-    min-height: 150px;
-    max-height: 150px;
-    width: 100%;
-  }
-  .product-desc {
-    font-size: 14px;
-    overflow: hidden;
-    height: auto;
-    min-height: 150px;
-    max-height: 150px;
-  }
-  .product-footer {
-    display: none;
-  }
-  .product-footer-media {
-    display: inline;
-    margin-left: 10px;
-  }
-  .product-footer-media button {
-    width: 200%;
-  }
-}
 
 /*******************************/
-/* BELOW 670px(Small Tablets) */
+/* BELOW 789px(Tablets) */
 /*******************************/
-@media (max-width: 670px) {
+@media (max-width: 789px) {
   .products-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 12px;
-    max-width: 650px;
+    max-width: 80%;
   }
   .product-card {
     padding: 8px;
@@ -159,14 +110,15 @@
 }
 
 /*******************************/
-/* BELOW 420px(Mobile Phones) */
+/* BELOW 426px(Mobile Phones) */
 /*******************************/
-@media (max-width: 420px) {
+@media (max-width: 426px) {
   .products-page-container {
     flex-direction: column;
   }
   .products-grid {
     grid-template-columns: 1fr;
+    max-width: 100%;
   }
   .product-card {
     padding: 8px;
@@ -196,9 +148,9 @@
 }
 
 /*******************************/
-/* BELOW 380px(Mobile Phones) */
+/* BELOW 376px(Mobile Phones) */
 /*******************************/
-@media (max-width: 380px) {
+@media (max-width: 3760px) {
   .product-desc {
     line-height: 1.2;
   }

@@ -29,11 +29,11 @@
 
 .home-page-category-content-box {
   width: 65%;
+  text-align: center;
 }
 
 .sub-heading-tertiary {
   font-size: 2rem;
-  text-align: center;
 }
 
 .category-content {
@@ -63,11 +63,11 @@
 /***************MEDIA QUERIES****************/
 
 /*******************************/
-/* BELOW 900px(Tablets) */
+/* BELOW 1025px(Tablets) */
 /*******************************/
-@media (max-width: 900px) {
+@media (max-width: 1025px) {
   .container {
-    max-width: 900px;
+    max-width: 100%;
     padding: 0 12px;
     margin: 0 auto;
   }
@@ -83,12 +83,12 @@
 }
 
 /*******************************/
-/* BELOW 670px(Mobile Phones) */
+/* BELOW 769px(Tablet) */
 /*******************************/
 
-@media (max-width: 670px) {
+@media (max-width: 769px) {
   .container {
-    max-width: 670px;
+    max-width: 100%;
     padding: 0 12px;
     margin: 0 auto;
   }
@@ -119,12 +119,12 @@
 }
 
 /*******************************/
-/* BELOW 420px(Mobile Phones) */
+/* BELOW 426px(Mobile Phones) */
 /*******************************/
 
-@media (max-width: 420px) {
+@media (max-width: 426px) {
   .container {
-    max-width: 420px;
+    max-width: 100%;
     padding: 0 12px;
     margin: 0 auto;
   }

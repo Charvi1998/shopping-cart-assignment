@@ -36,9 +36,22 @@
 /***************MEDIA QUERIES****************/
 
 /*******************************/
-/* BELOW 900px(Tablets) */
+/* BELOW 1440px(Laptops) */
 /*******************************/
-@media (max-width: 900px) {
+@media (max-width: 1440px) {
+  .sign-up-container {
+    margin: 24px 150px;
+    gap: 56px;
+  }
+  .sign-up-desc {
+    font-size: 16px;
+  }
+}
+
+/*******************************/
+/* BELOW 1025px(Laptops) */
+/*******************************/
+@media (max-width: 1025px) {
   .sign-up-container {
     margin: 24px 56px;
     gap: 56px;
@@ -49,36 +62,23 @@
 }
 
 /*******************************/
-/* BELOW 544px(Mobile Phones) */
+/* BELOW 769px(Laptops) */
 /*******************************/
-
-@media (max-width: 544px) {
+@media (max-width: 769px) {
   .sign-up-container {
-    flex-direction: column;
-    margin: 12px 86px;
-    gap: 24px;
+    margin: 24px 56px;
+    gap: 40px;
   }
   .sign-up-desc {
-    line-height: 1.2;
-    font-size: 14px;
-  }
-  .sign-up-header {
-    padding: 12px;
-  }
-  .sign-up-form {
-    width: 400px;
-  }
-  .signup-btn {
-    width: 80%;
-    margin-left: 35px;
+    font-size: 16px;
   }
 }
 
 /*******************************/
-/* BELOW 420px(Mobile Phones) */
+/* BELOW 426px(Mobile Phones) */
 /*******************************/
 
-@media (max-width: 420px) {
+@media (max-width: 426px) {
   .sign-up-container {
     flex-direction: column;
     margin: 12px 48px;

@@ -1,0 +1,213 @@
+.ReactModal__Overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0%;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.ReactModal__Content {
+  position: absolute;
+  width: 35%;
+  height: 85%;
+  transform: translate(132%, 15%);
+}
+
+.ReactModal__Content.ReactModal__Content--after-open {
+  padding: 0px;
+}
+
+.main-cart-section {
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-cart ion-icon {
+  color: #fff;
+  width: 24px;
+  height: 24px;
+}
+
+.header-cart {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem;
+  color: #fff;
+  background-color: rgb(37, 37, 37);
+}
+
+.header-cart span {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.offer-container {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  margin: 1.2rem;
+  padding: 0.5rem;
+}
+
+.offer-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cart-footer {
+  height: 7rem;
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-footer-text {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cart-footer-btn {
+  padding: 1rem;
+  color: #fff;
+  background-color: #a92949;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.no-items-in-cart {
+  text-align: center;
+  height: 55rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.no-items-in-cart p {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.no-items-in-cart span {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+/***************MEDIA QUERIES****************/
+
+/*******************************/
+/* BELOW 1025px(Laptop) */
+/*******************************/
+@media (max-width: 1025px) {
+  .ReactModal__Overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: translate(0%, 17%);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .ReactModal__Content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: translate(-4%, -5%);
+  }
+  .ReactModal__Content.ReactModal__Content--after-open {
+    padding: 0px;
+  }
+  .main-cart-section {
+    height: 52rem;
+  }
+  .no-items-in-cart {
+    height: 50rem;
+  }
+  .header-cart ion-icon {
+    color: #000;
+  }
+  .header-cart {
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+/*******************************/
+/* BELOW 769px(Tablets) */
+/*******************************/
+@media (max-width: 769px) {
+  .main-cart-section {
+    height: 80rem;
+  }
+  .no-items-in-cart {
+    height: 100%;
+  }
+  .ReactModal__Overlay {
+    transform: translate(0%, 13%);
+  }
+  .ReactModal__Content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transform: translate(-5%, -4%);
+  }
+}
+
+/********************************/
+/* BELOW 426px(Mobile Phones) */
+/*******************************/
+
+@media (max-width: 426px) {
+  .main-cart-section {
+    height: 100%;
+  }
+  .no-items-in-cart {
+    height: 83%;
+  }
+  .ReactModal__Overlay {
+    transform: translate(-0.5%, 10%);
+  }
+  .ReactModal__Content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: translate(-9%, -4%);
+  }
+}
+
+/********************************/
+/* BELOW 376px(Mobile Phones) */
+/*******************************/
+
+@media (max-width: 376px) {
+  .main-cart-section {
+    height: 100%;
+  }
+  .no-items-in-cart {
+    height: 80%;
+  }
+  .ReactModal__Overlay {
+    transform: translate(-1.75%, 10%);
+  }
+  .ReactModal__Content {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: translate(-9%, -4%);
+  }
+}

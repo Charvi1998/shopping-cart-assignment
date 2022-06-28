@@ -1,11 +1,15 @@
 .cart-icon-container {
-  width: 9.6rem;
-  height: 4.5rem;
+  width: 10%;
+  height: 9%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   gap: 0.4rem;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 8%;
+  right: 15%;
 }
 
 .shopping-logo {
@@ -18,12 +22,61 @@
   font-size: 1.2rem;
 }
 
-@media (max-width: 544px) {
-  .shopping-logo {
-    width: 26px;
-    height: 26px;
+/*******************************/
+/* BELOW 1440px(Landscape Tablets) */
+/*******************************/
+@media (max-width: 1440px) {
+  .cart-icon-container {
+    top: 8%;
+    right: 20%;
+    height: 6%;
   }
-  .item-count {
-    font-size: 10px;
+}
+
+/*******************************/
+/* BELOW 1025px(Tablets) */
+/*******************************/
+@media (max-width: 1025px) {
+  .cart-icon-container {
+    top: 7%;
+    right: 2%;
+    height: 8%;
+    width: 13%;
+  }
+}
+
+/*******************************/
+/* BELOW 769px(Tablets) */
+/*******************************/
+@media (max-width: 769px) {
+  .cart-icon-container {
+    width: 17%;
+    top: 5%;
+    height: 9%;
+    right: 1%;
+  }
+}
+
+/********************************/
+/* BELOW 426px(Mobile Phones) */
+/*******************************/
+@media (max-width: 426px) {
+  .cart-icon-container {
+    width: 17%;
+    height: 10%;
+    top: 0%;
+    right: -1%;
+  }
+}
+
+/********************************/
+/* BELOW 376px(Mobile Phones) */
+/*******************************/
+@media (max-width: 376px) {
+  .cart-icon-container {
+    width: 17%;
+    height: 10%;
+    top: 0%;
+    right: 0%;
   }
 }
